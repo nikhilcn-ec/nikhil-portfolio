@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nikhil</title>
+  <link rel="stylesheet" href="style/project.css">
+  <link rel="shortcut icon" href="logos/cn.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,700&family=Roboto:ital,wght@0,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo-container">
+        <img src="logos/cn.png" alt="logo" class="main-logo">
+        <h1 class="logo-title">NIKHIL.</h1>
+      </div>
+      <ul class="menu">
+        <li class="menu-items"><a href="index.html">Home</a></li>
+        <li class="menu-items"><a href="about.html">About</a></li>
+        <li class="menu-items"><a href="education.html">Education</a></li>
+        <li class="menu-items"><a class="current-page"href="project.html">Projects</a></li>
+      </ul>
+      <img class="menu-logo" src="logos/menu-bar.png" onclick="display()" alt="logo">
+    </nav>
+  </header>
+  <main>
+    <div class="page-title">
+      <h1 class="heading">Projects</h1>
+      <div class="hover-effect"></div>
+    </div>
+
+    <section class="project-container">
+      <div class="proj-img-container  proj-img1">
+      </div>
+      <div class="proj-info">
+        <h2 class="proj-title">Smart Street Light Automation System</h2>
+        <p class="proj-overview">Our team at Srinivas University Institute of Engineering and Technology, Mangalore, developed an IoT-based smart street light automation system six months ago. The project efficiently controls street lights, considering time and weather conditions to minimize power consumption. Using IR sensors, the system detects objects and adjusts light intensity accordingly. Check out the details on Daijiworld to learn more about our #smart_street_light initiative</p>
+        <a href="https://github.com/nikhilcn-ec/smart_street_light.git"><button class="learn-more-btn">View Project</button></a>
+      </div>
+    </section>
+
+    <section class="project-container">
+      <div class="proj-img-container proj-img2">
+      </div>
+      <div class="proj-info">
+        <h2 class="proj-title">Python Chatbot for Simple Queries</h2>
+        <p class="proj-overview"> Explore our straightforward Python-based chatbot designed to respond to basic queries. This user-friendly chatbot serves as an entry-level conversational interface, providing answers to common inquiries. Developed for simplicity and ease of use, our Python chatbot is an excellent tool for handling fundamental questions. Enhance your user experience with this accessible and versatile chatbot solution.</p>
+        <a href="https://github.com/nikhilcn-ec/chatbot.git"><button class="learn-more-btn">View Project</button></a>
+      </div>
+    </section>
+
+    <section class="project-container">
+      <div class="proj-img-container proj-img3">
+      </div>
+      <div class="proj-info">
+        <h2 class="proj-title">Interactive Space Shooter Game with Python and Pygame</h2>
+        <p class="proj-overview">Dive into the thrilling cosmos of our space shooter game, crafted using Python and Pygame. Blast through celestial obstacles, engage in epic battles, and navigate the vastness of space—all while experiencing a dynamic response to basic queries. Our interactive game not only provides an adrenaline-pumping gaming experience but also showcases the versatility of Python programming. Embark on a cosmic adventure with our space shooter, where every move and query-response adds a layer of excitement to your gaming journey.</p>
+        <a href="https://github.com/nikhilcn-ec/spaceshooter.git"><button class="learn-more-btn">View Project</button></a>
+      </div>
+    </section>
+
+    <section class="project-container">
+      <div class="proj-img-container proj-img4">
+      </div>
+      <div class="proj-info">
+        <h2 class="proj-title">Simple Responsive Website with HTML and CSS</h2>
+        <p class="proj-overview">Explore our straightforward yet effective responsive website created using basic HTML and CSS. This user-friendly site ensures a seamless experience across various devices by adapting its layout to different screen sizes. Dive into the world of simplicity and functionality with our #SimpleWebsite project, demonstrating the power of clean design and fundamental web development techniques.</p>
+        <a href=" https://nikhilcn-ec.github.io/sample_web/"><button class="learn-more-btn">View Project</button></a>
+      </div>
+    </section>
+
+    <section class="project-container">
+      <div class="proj-img-container proj-img5">
+      </div>
+      <div class="proj-info">
+        <h2 class="proj-title"> Dynamic Fashion Hub - HTML, CSS, and JavaScript Myntra Clone</h2>
+        <p class="proj-overview">Explore the world of online fashion with our dynamic website, a Myntra clone crafted using HTML, CSS, and JavaScript. Immerse yourself in a seamless shopping experience as you browse through a vast collection of trendy apparel, accessories, and more. Our user-friendly interface, powered by JavaScript, ensures a responsive and interactive platform. Dive into the latest fashion trends, effortlessly navigate through categories, and enjoy a personalized shopping journey. </p>
+        <a href="https://nikhilcn-ec.github.io/myntra_clone/"><button class="learn-more-btn">View Project</button></a>
+      </div>
+    </section>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer">
+      <p>copyright Nikhil C N 2024</p>
+    </div>
+  </footer>
+  <script>
+    function display(){
+    let menu=document.querySelector('.menu');
+    menu.classList.toggle('display');
+    console.log('hii');
+  }
+    </script>
+</body>
+</html>

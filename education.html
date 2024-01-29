@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style/education.css">
+  <link rel="shortcut icon" href="logos/cn.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,700&family=Roboto:ital,wght@0,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo-container">
+        <img src="logos/cn.png" alt="logo" class="main-logo">
+        <h1 class="logo-title">NIKHIL.</h1>
+      </div>
+      <ul class="menu">
+        <li class="menu-items"><a href="index.html">Home</a></li>
+        <li class="menu-items"><a href="about.html">About</a></li>
+        <li class="menu-items"><a class="current-page" href="education.html">Education</a></li>
+        <li class="menu-items"><a href="project.html">Projects</a></li>
+      </ul>
+      <img class="menu-logo" src="logos/menu-bar.png" onclick="display()" alt="logo">
+    </nav>
+  </header>
+  <main>
+    <div class="page-title">
+      <h1 class="heading">Education Details</h1>
+    <div class="hover-effect"></div>
+    </div>
+    
+    <div class="edu-table">
+      <table>
+        <tr class="table-header">
+          <th class="deg-head">Degree</th>
+          <th class="colg-head">School/College</th>
+          <th class="percent-head">Percentage</th>
+        </tr>
+        <tr>
+          <td class="deg">B.Tech</td>
+          <td class="colg">
+            <img src="logos/srinivas-logo.jpeg" alt="logo">
+            <div class="colg-name-container">
+              <h1 class="colg-name">Srinivas University Institute of Engineering and Technology</h1>
+              <h4 class="colg-sub">Bachelor of Technology - BTech, Computer Science</h4>
+            </div>
+          </td>
+          <td class="percent">on going</td>
+        </tr>
+
+        <tr>
+          <td class="deg">&#x2161; PUC</td>
+          <td class="colg">
+            <img src="logos/mes-logo.jpeg" alt="">
+            <div class="colg-name-container">
+              <h1 class="colg-name">MES PU College of Arts, Commerce and Science</h1>
+              <h4 class="colg-sub">Pre-University, PCME</h4>
+            </div>
+          </td>
+          <td class="percent">91%</td>
+        </tr>
+
+        <tr>
+          <td class="deg">SSLC</td>
+          <td class="colg">
+            <img src="logos/carmel-logo.jpeg" alt="logo">
+            <div class="colg-name-container">
+              <h1 class="colg-name">Carmel High School</h1>
+              <h4 class="colg-sub"> High School </h4>
+            </div>
+          </td>
+          <td class="percent">89%</td>
+        </tr>
+      </table>
+    </div>
+  </main>
+  <footer>
+    <div class="footer">
+      <p>copyright Nikhil C N 2024</p>
+    </div>
+  </footer>
+  <script>
+    function display(){
+    let menu=document.querySelector('.menu');
+    menu.classList.toggle('display');
+    console.log('hii');
+  }
+    </script>
+</body>
+</html>
