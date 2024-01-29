@@ -1,0 +1,228 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+ 
+ body{
+   font-size: 1.125rem;
+   font-family: Roboto;
+   font-weight: 400;
+ }
+
+ /* typograpgy */
+
+header{
+  position: sticky;
+  top:0;
+  left: 0;
+}
+
+a{
+ text-decoration: none;
+}
+
+.navbar .logo-title{
+  font-family: Fira,Sans;
+  font-weight: 700;
+  color: rgb(5, 5, 43);
+  font-size: 2em;
+}
+
+.menu li a{
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: rgb(6, 6, 46);
+  padding: 1.3em 0.5em;
+  transition: all 0.1s;
+}
+.menu li a:not(.current-page):hover{
+  border-bottom: 5px solid rgb(238, 116, 238);
+  border-radius: 2px;
+  font-weight: 700;
+}
+.menu li .current-page{
+  font-weight: 700;
+  border-bottom: 5px solid rgb(238, 116, 238);
+  border-radius: 2px;
+}
+.colg-name{
+  font-size: 1.4rem;
+  color: rgb(7, 7, 75);
+}
+.colg-sub{
+  font-size: 1rem;
+  font-weight: 500;
+}
+.deg{
+  font-size: 1.275rem;
+  color: rgb(4, 52, 4);
+  font-weight: 600;
+}
+.edu-table th{
+  font-size: 1.6rem;
+  padding-bottom: 2em;
+}
+.footer p{
+  font-size: 1.275rem;
+  font-weight: 500;
+  color: whitesmoke;
+}
+.heading{
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgb(8, 45, 88);
+  cursor: pointer;
+}
+.hover-effect{
+  width: 50px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: rgb(220, 11, 46);
+  transition: width 0.5s ease-in-out;
+}
+.heading:hover~.hover-effect{
+  width: 330px;
+}
+/* layouts */
+.navbar{
+  display: flex;
+  width: 100%;
+  padding: 1em 2em;
+  border: none;
+  align-items: center;
+  justify-content: space-between;
+  background-color: whitesmoke;
+}
+.navbar .logo-container{
+    display: flex;
+    align-items: center;
+}
+.navbar .main-logo{
+  width: 50px;
+  height: 50px;
+  margin-right: 0.5em;
+}
+
+.navbar .menu{
+  display: flex;
+  list-style-type: none;
+}
+
+.menu .menu-items{
+  margin-right: 2em;
+}
+
+.edu-table{
+  width: 80%;
+  display: flex;
+  margin: 4em auto;
+}
+.edu-table table{
+  width: 100%;
+}
+.edu-table table .colg{
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+.colg img{
+  width: 15%;
+  margin-right:2em;
+}
+.colg-name-container{
+  width: 75%;
+}
+.edu-table td{
+  padding: 1em;
+  text-align: center;
+}
+.page-title{
+  margin: 2em 5em;
+}
+
+.footer{
+  width: 100%;
+  padding: 1em;
+  background-color: black;
+  text-align: center;
+  margin-bottom: 0;
+}
+footer{
+  padding: 0;
+}
+.menu-logo{
+  max-width: 37px;
+  display: none;
+}
+@media (max-width:860px) {
+  .menu-logo{
+    max-width: 37px;
+    display: inline-block;
+    position: absolute;
+    top:30px;
+    right: 30px;
+    cursor: pointer;
+  }
+  .navbar{
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .menu{
+    padding-top: 5em;
+    position: absolute;
+    top: -900px;
+    right: 0;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.7rem;
+    background-color: rgba(15, 15, 150, 0.718);
+    border-bottom-right-radius: 80px;
+    transition: all 0.5s ease;
+  }
+
+  .navbar .menu li{
+    margin-bottom: 2em;
+    align-self: center;
+    margin-right: 0;
+  }
+  .navbar li {
+    color: whitesmoke;
+  }
+  .navbar .logo-container{
+    z-index: 1000;
+    color: whitesmoke;
+}
+.display{
+  top: 0px;
+}
+.edu-table{
+  width: 100%;
+}
+.edu-table th{
+  font-size: 1.5rem;
+}
+.page-title{
+  margin-left: 1em;
+}
+.edu-table table .colg {
+  flex-direction: column;
+}
+.colg-name-container{
+  width: 100%;
+}
+.colg-name {
+  font-size: 1.275em;
+}
+.colg img{
+  width: 30px;
+  margin: 0 auto;
+}
+}
