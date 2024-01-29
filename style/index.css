@@ -1,0 +1,339 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body{
+  font-size: 1.125rem;
+  font-family: Roboto;
+  font-weight: 400;
+}
+
+/* typograpgy */
+
+header{
+
+}
+
+a{
+ text-decoration: none;
+}
+
+.navbar .logo-title{
+  font-family: Fira,Sans;
+  font-weight: 700;
+  color: rgb(5, 5, 43);
+  font-size: 2em;
+}
+.navbar .logo-title::first-letter{
+  color: rgb(217, 19, 52);
+}
+.menu li a{
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: rgb(6, 6, 46);
+  padding: 1.4em 0.5em;
+  transition: all 0.1s;
+}
+.menu li a:not(.current-page):hover{
+  border-bottom: 5px solid rgb(238, 116, 238);
+  border-radius: 2px;
+  font-weight: 700;
+}
+.menu li .current-page{
+  font-weight: 700;
+  border-bottom: 5px solid rgb(238, 116, 238);
+  border-radius: 2px;
+}
+.position{
+  font-size: 1.4rem;
+  font-weight: 200;
+  color: whitesmoke;
+  margin-bottom: 0.5em;
+}
+.intro{
+  margin-top: 0.5em;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: whitesmoke; 
+}
+.heading{
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgb(8, 45, 88);
+  cursor: pointer;
+}
+.intro-content{
+  margin-top: 1.275em;
+  font-size: 1.3rem;
+}
+.card-title{
+  font-size: 1.4rem;
+  color: rgb(231, 18, 53);
+  margin-bottom: 1em;
+}
+.skill-img{
+  width: 50%;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+.skill-overview{
+  font-size: 1em;
+  color: rgb(4, 4, 54);
+  margin-bottom: 2.5em;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+}
+.card:hover .skill-overview{
+  color: white;
+}
+.item-title{
+    font-size: 1.6rem;
+    color: rgb(56, 56, 161);
+    margin-bottom: 0.5em;
+}
+.item-overview{
+  font-size: 1.1rem;
+  margin-bottom: 1.5em;
+}
+.item-img{
+  width: 20%;
+}
+.footer p{
+  font-size: 1.275rem;
+  font-weight: 500;
+  color: whitesmoke;
+}
+/* layouts */
+.navbar{
+  display: flex;
+  width: 100%;
+  padding: 1em 2em;
+  border: none;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 10000;
+}
+.navbar .logo-container{
+    display: flex;
+    align-items: center;
+}
+.navbar .main-logo{
+  width: 50px;
+  height: 50px;
+  margin-right: 0.5em;
+}
+
+.navbar .menu{
+  display: flex;
+  list-style-type: none;
+}
+.menu .menu-items{
+  margin-right: 2em;
+}
+.image-container{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/bg4.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-bottom: 5em;
+
+}
+.bg-title{
+  position: absolute;
+  bottom: 100px;
+  left: 150px;
+  padding: 1em;
+}
+.intro-container,.skills-container,.achieve-container{
+  width: 80%;
+  margin: 1em auto;
+  padding: 1em;
+  margin-bottom: 5em;
+}
+.achieve-container{
+  margin-bottom: 2em;
+}
+.intro-heading,.achieve-heading{
+  display: flex;
+  max-width: 220px;
+  flex-direction: column;
+}
+.skills-heading{
+  display: flex;
+  max-width: 345px;
+  flex-direction: column;
+}
+
+.hover-effect{
+  width: 50px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: rgb(220, 11, 46);
+  transition: width 0.5s ease-in-out;
+}
+
+.intro-container:hover .hover-effect,.skills-container:hover .hover-effect,.achieve-container:hover .hover-effect{
+  width: 100%;
+}
+
+.skill-cards{
+  display: flex;
+  margin-top: 2em;
+  justify-content: space-between;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 23%;
+  border: 1px solid red;
+  padding: 1em;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  transition-delay: 0.1ms;
+}
+.card:hover{
+  transform: scale(1.1);
+  border: none;
+  background-color: rgba(0, 0, 0, 0.848);
+  box-shadow: 7px 7px 10px rgba(215, 19, 51, 0.662),-7px -7px 10px rgba(215, 19, 51, 0.662);
+}
+.card:hover .learn-more-btn{
+  background-color: rgba(214, 47, 75, 0.811);
+}
+.learn-more-btn{
+  font-size: 0.875rem;
+  padding: 0.8em 1.5em;
+  border-radius: 20px;
+  border: none;
+  color: whitesmoke;
+  background-color: rgba(36, 97, 36, 0.462);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.card:hover .learn-more-btn:hover,.learn-more-btn:hover{
+  background-color: azure;
+  color: rgb(18, 80, 18);
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+.achieve-lists{
+  margin-top: 2em;
+}
+.item{
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.1),-5px -5px 20px rgba(0,0,0,0.1);
+  margin-bottom: 2em;
+  transition: all 0.5s ease-in-out;
+}
+.item:hover{
+  transform: scale(1.1);
+}
+.item-info{
+  width: 75%;
+}
+.footer{
+  width: 100;
+  padding: 1em;
+  background-color: black;
+  text-align: center;
+}
+.menu-logo{
+  max-width: 37px;
+  display: none;
+}
+
+
+
+@media (max-width:860px) {
+  .menu-logo{
+    max-width: 37px;
+    display: inline-block;
+    position: absolute;
+    top:30px;
+    right: 30px;
+    cursor: pointer;
+  }
+  .navbar{
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .menu{
+    padding-top: 5em;
+    position: absolute;
+    top: -900px;
+    right: 0;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.7rem;
+    background-color: rgba(15, 15, 150, 0.718);
+    border-bottom-right-radius: 80px;
+    transition: all 0.5s ease;
+  }
+
+  .navbar .menu li{
+    margin-bottom: 2em;
+    align-self: center;
+    margin-right: 0;
+  }
+  .navbar li a,.logo-container .logo-title{
+    color: whitesmoke;
+  }
+  .navbar .logo-container{
+    z-index: 1000;
+    color: whitesmoke;
+}
+.display{
+  top: 0px;
+}
+.bg-title{
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+  padding: 1em;
+}
+.skill-cards{
+  flex-direction: column;
+}
+.card{
+  width: 60%;
+  margin: 2em auto;
+}
+.item{
+  flex-direction: column;
+}
+.item-img{
+  width: 100%;
+  margin: 1em auto;
+}
+.item-info{
+  width: 100%;
+}
+}
+@media (max-width:450px) {
+  .skill-cards{
+    flex-direction: column;
+  }
+  .card{
+    width: 80%;
+    margin: 2em auto;
+  }
+}
+
+
+

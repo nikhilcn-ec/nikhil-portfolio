@@ -1,0 +1,218 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+ 
+ body{
+   font-size: 1.125rem;
+   font-family: Roboto;
+   font-weight: 400;
+ }
+
+ /* typograpgy */
+
+header{
+  position: sticky;
+  top:0;
+  left: 0;
+}
+
+a{
+ text-decoration: none;
+}
+
+.navbar .logo-title{
+  font-family: Fira,Sans;
+  font-weight: 700;
+  color: rgb(5, 5, 43);
+  font-size: 2em;
+}
+
+.menu li a{
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: rgb(6, 6, 46);
+  padding: 1.4em 0.5em;
+  transition: all 0.1s;
+}
+.menu li a:not(.current-page):hover{
+  border-bottom: 5px solid rgb(238, 116, 238);
+  border-radius: 2px;
+  font-weight: 700;
+}
+.menu li .current-page{
+  font-weight: 700;
+  border-bottom: 5px solid rgb(238, 116, 238);
+  border-radius: 2px;
+}
+.heading{
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgb(8, 45, 88);
+  cursor: pointer;
+}
+.hover-effect{
+  width: 50px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: rgb(220, 11, 46);
+  transition: width 0.5s ease-in-out;
+}
+.heading:hover~.hover-effect{
+  width: 155px;
+}
+.proj-title{
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: rgb(12, 12, 73);
+  margin-bottom: 0.6em;
+}
+.proj-overview{
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 2em;
+}
+.footer p{
+  font-size: 1.275rem;
+  font-weight: 500;
+  color: whitesmoke;
+}
+/* layouts */
+.navbar{
+  display: flex;
+  width: 100%;
+  padding: 1em 2em;
+  border: none;
+  align-items: center;
+  justify-content: space-between;
+  background-color: whitesmoke;
+}
+.navbar .logo-container{
+    display: flex;
+    align-items: center;
+}
+.navbar .main-logo{
+  width: 50px;
+  height: 50px;
+  margin-right: 0.5em;
+}
+
+.navbar .menu{
+  display: flex;
+  list-style-type: none;
+}
+
+.menu .menu-items{
+  margin-right: 2em;
+}
+.page-title{
+  margin: 2em 5em;
+}
+.learn-more-btn{
+  font-size: 0.875rem;
+  padding: 0.8em 1.5em;
+  border-radius: 20px;
+  border: none;
+  color: whitesmoke;
+  background-color: rgba(36, 97, 36, 0.462);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.learn-more-btn:hover{
+  background-color: azure;
+  color: rgb(18, 80, 18);
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+.project-container{
+  width: 80%;
+  margin: 2em auto;
+  margin-bottom: 3.5em;
+  padding: 2em;
+  box-shadow: 5px 5px 1cqb rgba(230, 222, 222, 0.662),-5px -5px 10px rgba(202, 196, 197, 0.662);
+}
+.proj-img-container{
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 1em;
+} 
+.proj-img1{
+  background-image: url(../images/achieve1.jpeg);
+}
+.proj-img2{
+  background-image: url(../images/proj2.png);
+}
+.proj-img3{
+  background-image: url(../images/proj3.png);
+}
+.proj-img4{
+  background-image: url(../images/proj4.png);
+}
+.proj-img5{
+  background-image: url(../images/proj5.png);
+}
+.footer{
+  width: 100%;
+  padding: 1em;
+  background-color: black;
+  text-align: center;
+  margin-bottom: 0;
+}
+footer{
+  padding: 0;
+}
+.menu-logo{
+  max-width: 37px;
+  display: none;
+}
+@media (max-width:860px) {
+  .menu-logo{
+    max-width: 37px;
+    display: inline-block;
+    position: absolute;
+    top:30px;
+    right: 30px;
+    cursor: pointer;
+  }
+  .navbar{
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .menu{
+    padding-top: 5em;
+    position: absolute;
+    top: -900px;
+    right: 0;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.7rem;
+    background-color: rgba(15, 15, 150, 0.718);
+    border-bottom-right-radius: 80px;
+    transition: all 0.5s ease;
+  }
+
+  .navbar .menu li{
+    margin-bottom: 2em;
+    align-self: center;
+    margin-right: 0;
+  }
+  .navbar li a{
+    color: whitesmoke;
+  }
+  .navbar .logo-container{
+    z-index: 1000;
+    color: whitesmoke;
+}
+.display{
+  top: 0px;
+}
+}
